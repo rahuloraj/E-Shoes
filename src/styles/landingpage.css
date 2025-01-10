@@ -1,0 +1,502 @@
+.main-Container {
+  text-align: center;
+  background-color: #f7ecde;
+  position: relative;
+  height: clamp(270px, 45vw, 2000px);
+}
+.main-img-cont {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 99;
+  top: 13.5vw;
+  left: 0;
+}
+.main-img {
+  z-index: 99;
+  width: clamp(260px, 45.8vw, 60vw);
+  margin-right: 8vw;
+}
+.p1,
+.p2,
+.p3,
+.p4 {
+  position: absolute;
+  width: 100%;
+  font-family: sans-serif;
+  font-style: normal;
+  line-height: 1;
+  font-weight: 900;
+}
+.p1 {
+  font-size: clamp(50px, 10.6vw, 100vw);
+  -webkit-text-stroke: 3px rgb(33, 37, 41);
+  color: transparent;
+  top: 1.8vw;
+}
+.p2 {
+  font-size: clamp(60px, 12.9vw, 100vw);
+  color: rgb(33, 37, 41);
+  z-index: 1;
+  top: 6.2vw;
+}
+.p3 {
+  font-size: clamp(20px, 3.5vw, 100vw);
+  display: flex;
+  padding: 0 2vw;
+  justify-content: space-between;
+  color: rgb(33, 37, 41);
+  bottom: 2vw;
+}
+.p4 {
+  display: none;
+}
+.title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3%;
+  font-family: "League Spartan", sans-serif, "Poppins";
+}
+.title h1 {
+  width: 100%;
+  font-weight: 900;
+  font-size: clamp(20px, 2.6vw, 16vw);
+  line-height: 1;
+}
+.title h2 {
+  font-size: clamp(16px, 1.7vw, 12vw);
+  font-weight: 400;
+  color: gray;
+}
+.shopping-gender {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2.2vw 1vw;
+}
+.shopping-gender img {
+  width: 25vw;
+  aspect-ratio: 1;
+}
+.New-Arrival {
+  padding: 1% 5%;
+}
+.box1 {
+  display: flex;
+  height: 680px;
+  width: 100%;
+  background-color: #08214a;
+  margin-bottom: 10px;
+}
+.box1 img {
+  width: 280px;
+  transition-property: all;
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+}
+.box1-container1,
+.box1-container2,
+.box1-container3,
+.box1-container4,
+.box1-container5 {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: all;
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+}
+.slide-max {
+  width: 50%;
+  transition-property: all;
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+}
+.slide-max > img {
+  width: 600px;
+  transition-property: all;
+  transition-duration: 0.7s;
+  z-index: 1;
+}
+.slide-min {
+  width: 12.5%;
+  transition-property: width;
+  transition-duration: 1.5s;
+}
+.slide-min > img {
+  width: 100%;
+}
+
+.Featured-products {
+  padding: 0 5% 4%;
+}
+.featured-div {
+  padding: 4% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Featured-products .product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2.6rem;
+}
+.Featured-products .card-container {
+  position: relative;
+  width: clamp(250px, 20vw, 310px);
+  padding: 14px 14px 20px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+  transition: 0.2s ease;
+}
+.Featured-products .card-container:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+}
+.image-div {
+  width: 100%;
+  background-color: #e5e5e5;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Featured-products img {
+  object-fit: contain;
+  width: inherit;
+  aspect-ratio: 1;
+  padding: 15px 8px 0;
+}
+.desc {
+  text-align: start;
+  padding: 10px 0 0;
+  font-family: "League Spartan", sans-serif, "Poppins";
+  font-style: normal;
+}
+.desc h5 {
+  font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: clamp(18px, 3vw, 24px);
+  color: #1a1a1a;
+  padding-top: 0.5vw;
+  line-height: 1;
+}
+.desc h6 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 400;
+  color: gray;
+}
+.star {
+  color: rgb(243, 181, 25);
+  font-size: clamp(13px, 2.5vw, 17px);
+  display: flex;
+  gap: 3px;
+  padding: 2px 0;
+}
+.desc h4 {
+  font-weight: 800;
+  font-size: clamp(15px, 2.5vw, 19px);
+  color: #54bab9;
+  padding: 10px 0 0;
+}
+.btn-cart {
+  height: clamp(30px, 3.5vw, 40px);
+  width: clamp(30px, 3.5vw, 40px);
+  border-radius: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #e8f6ea;
+  color: #54bab9;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: clamp(12px, 1.5vw, 20px);
+  right: clamp(14px, 1.5vw, 20px);
+  cursor: pointer;
+}
+.add-to-cart {
+  font-size: clamp(15px, 2.5vw, 21px);
+  display: flex;
+  margin-right: 0.28vw;
+  justify-content: center;
+  align-items: center;
+}
+.add-to-cart::before {
+  position: absolute;
+  bottom: 5px;
+  right: 12px;
+}
+.countdown {
+  background-color: #f7ecde;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1px, 3vw, 96px);
+  min-height: 180px;
+  font-family: "League Spartan", "Poppins", sans-serif;
+  font-weight: 900;
+}
+.time-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #54bab9;
+}
+.time-title-2 {
+  display: none;
+}
+.countdown h1 {
+  text-align: center;
+  line-height: 50px;
+  line-height: 1;
+  font-size: clamp(19px, 2.5vw, 60px);
+  color: #1a1a1a;
+}
+.time-container div {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: clamp(17px, 2.5vw, 20px);
+}
+.time-container div span {
+  height: clamp(42px, 5vw, 70px);
+  width: clamp(42px, 5vw, 70px);
+  border: 2px solid #54bab9;
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: clamp(22px, 2vw, 40px);
+  border-radius: 10px;
+  padding-top: 5px;
+}
+.time-container h2 {
+  display: flex;
+  margin: 20px;
+  padding-bottom: 35px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: clamp(32px, 3.5vw, 45px);
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #f7ecde;
+  min-height: 170px;
+  padding: 20px 60px;
+}
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.features-icon div:nth-child(1) {
+  width: clamp(38px, 10vw, 70px);
+  aspect-ratio: 1;
+  margin-inline: auto;
+}
+.features-icon div:nth-child(2) {
+  width: 100%;
+  margin-inline: auto;
+  margin-top: 10px;
+  line-height: 1;
+}
+.features-icon img {
+  width: inherit;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin-inline: auto;
+}
+.features-icon h5 {
+  font-family: "League Spartan", "Poppins", sans-serif;
+  font-size: clamp(12px, 2.2vw, 16px);
+  font-weight: 600;
+}
+.banner {
+  margin: 2.778vw 5.5vw;
+  display: flex;
+  gap: 2.778vw;
+  flex-direction: column;
+}
+.banner-row-1,
+.banner-row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.banner .banner-row-1 img {
+  width: 31.5%;
+  height: -webkit-fill-available;
+}
+.banner .banner-row-2 img {
+  width: 48%;
+  height: -webkit-fill-available;
+}
+@media only screen and (max-width: 1500px) {
+  .Featured-products .card-container {
+    width: clamp(280px, 25vw, 310px);
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .box1 img {
+    width: -webkit-fill-available;
+  }
+  .box1 {
+    height: 490px;
+  }
+  .slide-min {
+    width: 15%;
+    transition-duration: 0.7s;
+  }
+  .slide-max {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .box1 {
+    height: 380px;
+  }
+  .slide-min {
+    width: 16.5%;
+  }
+  .slide-max {
+    width: 34%;
+  }
+  .time-container h2 {
+    margin: 7px;
+    padding-bottom: 29px;
+  }
+  .Featured-products .card-container {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .featured-div {
+    padding: 8% 5%;
+  }
+  .box1 {
+    height: 280px;
+  }
+  .Featured-products .card-container {
+    padding: 9px 10px;
+    border-radius: 18px;
+  }
+  .Featured-products .product-container {
+    gap: 1rem;
+  }
+  .Featured-products img {
+    height: -webkit-fill-available;
+    padding: 0 8px;
+  }
+  .image-div {
+    border-radius: 13px;
+  }
+  .desc {
+    padding: 15px 0 2px;
+  }
+  .Featured-products .card-container,
+  .Featured-products .card-container:hover {
+    box-shadow: none;
+  }
+  .features {
+    gap: 12px;
+    padding: 10px 4px;
+  }
+  .banner-row-2 {
+    display: none;
+  }
+  .banner-row-1 {
+    flex-direction: column;
+  }
+  .banner .banner-row-1 img {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .countdown {
+    gap: 1px;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  .time-container {
+    margin: 4px 0 8px;
+  }
+  .countdown h1:nth-child(2) {
+    display: none;
+  }
+  .time-title-2 {
+    display: block;
+    line-height: 1;
+    margin-top: -9px;
+  }
+}
+@media only screen and (max-width: 585px) {
+  .p3 {
+    display: none;
+  }
+  .p4 {
+    font-size: clamp(23px, 6vw, 10vw);
+    color: rgb(33, 37, 41);
+    display: block;
+    bottom: 2vw;
+  }
+  .p2 {
+    top: 6.6vw;
+  }
+  .shopping-gender img {
+    height: 19vh;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .p1 {
+    font-size: 12vw;
+  }
+  .p2 {
+    font-size: 14vw;
+    top: 7vw;
+  }
+  .main-Container {
+    height: 60vw;
+    margin-bottom: 10px;
+  }
+  .main-img {
+    width: 60vw;
+  }
+  .box1 {
+    height: 190px;
+  }
+  .features {
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+  .Featured-products .card-container {
+    width: 47%;
+  }
+}

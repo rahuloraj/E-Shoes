@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+.navigation-bar {
+  position: relative;
+  display: flex;
+  height: 55px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7ecde;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+.nav-scroll {
+  background-color: #e9dac1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+/* .logo {
+  padding: 0 0 0 28px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+} */
+.logo {
+  padding: 0 0 0 24px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* cursor: pointer; */
+}
+.logo a {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-style: italic;
+}
+.logo img {
+  height: 27px;
+}
+.nav-links,
+.nav-links-md {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "League Spartan", "Poppins", sans-serif;
+  font-weight: 600;
+  gap: var(--gap, 4.5rem);
+}
+.nav-link {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+.nav-link:hover {
+  color: #54bab9;
+}
+.nav-button,
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-button {
+  margin-right: 10px;
+}
+.btnIcon {
+  position: relative;
+  font-size: 27px;
+  padding: 0 10px;
+  color: #1a1a1a;
+}
+.navAmount {
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  font-size: 12px;
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 50%;
+  margin: 0;
+  height: 17px;
+  text-align: center;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnMenu {
+  font-size: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+  display: none;
+}
+.closeBtn {
+  display: none;
+}
+.btnIcon:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  list-style: none;
+  width: fit-content;
+  background-color: #fff;
+  position: absolute;
+  z-index: 99;
+  right: 10px;
+  overflow: hidden;
+  display: none;
+  border: 1px solid #cce7d0;
+  border-radius: 0.5rem;
+}
+.dropdown li {
+  /* display: inline-block; */
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.dropdown li:last-child {
+  border-bottom: none;
+}
+.dropdown li:hover {
+  background-color: #f7f6f6;
+  .a {
+    color: #54bab9;
+  }
+}
+.dropdown li a,
+.dropdown li button {
+  display: block;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  background-color: #fff;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* Newsletter */
+.subscription {
+  background-color: #f7ecde;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(13px, 5vw, 100px);
+  padding: 45px 0;
+}
+.subscription-c1,
+.subscription-c2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.subscription-c1 span:first-child {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: clamp(20px, 2.5vw, 34px);
+  text-align: center;
+  line-height: clamp(25px, 4vw, 55px);
+}
+.subscription-c1 span:last-child {
+  font-family: sans-serif;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 400;
+  text-align: center;
+}
+.subscription-c2 div {
+  position: relative;
+  width: clamp(300px, 40vw, 600px);
+}
+.subscription-c2 input {
+  font-family: "League Spartan", "Poppins", sans-serif;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  margin: auto 0;
+  border: 1px solid #f7ecde;
+  border-right-width: 0px;
+  outline: none;
+  padding-left: 15px;
+}
+.subscription-c2 button {
+  font-family: "League Spartan", "Poppins", sans-serif;
+  position: absolute;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid #f7ecde;
+  border-left-width: 0px;
+  color: white;
+  background-color: red;
+  outline: none;
+  cursor: pointer;
+  padding: 11px 21px;
+  right: 0;
+}
+
+/* Footer */
+.footer {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: #e5e5e5;
+  padding: 30px 50px 10px;
+}
+.footer-main {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.footer-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.footer-container .sec {
+  margin: 0 auto;
+}
+.footer-container .sec h2 {
+  position: relative;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.footer-container .sec p {
+  color: black;
+}
+.footer-container .footer-social {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.footer-container .footer-social li {
+  list-style: none;
+}
+.footer-container .footer-social li a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-color: black;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.footer-container .quicklinks ul li {
+  list-style: none;
+}
+.footer-container .quicklinks ul li a {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.footer-container .contact .footer-info li {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  margin-bottom: 5px;
+}
+.footer-container .contact .footer-info li span {
+  color: black;
+  font-size: 20px;
+}
+.footer-container .contact .footer-info li a {
+  color: black;
+  text-decoration: none;
+}
+.copyrightText {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 100px 0px;
+  text-align: center;
+  color: black;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+.copyrightText a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+@media only screen and (max-width: 1024px) {
+  .btnMenu {
+    display: block;
+  }
+  .logo img {
+    height: 23px;
+  }
+  .btnIcon,
+  .btnMenu {
+    margin-top: 8px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links-md {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    font-size: 24px;
+    gap: 40px;
+    background-color: #f7ecde;
+    transition: 1s;
+  }
+  .nav-link {
+    font-weight: 700;
+    opacity: 1;
+    width: 80%;
+    text-align: center;
+  }
+  .closeBtn {
+    display: block;
+    position: absolute;
+    top: 10px;
+    font-size: 30px;
+    left: 10px;
+    padding: 5px 10px;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .footer {
+    padding: 30px;
+    padding-bottom: 20px;
+  }
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .copyrightText {
+    padding: 20px 40px 0px;
+  }
+  .footer-container .sec {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 910px) {
+  .subscription-c2 input {
+    padding-left: 10px;
+  }
+  .subscription-c2 button {
+    padding: 11px 14px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 638px) {
+  .subscription {
+    flex-direction: column;
+    padding: 35px 0;
+  }
+  .subscription-c2 div {
+    width: clamp(300px, 80vw, 600px);
+  }
+  .subscription-c1 span:first-child {
+    font-size: clamp(20px, 5vw, 30px);
+    line-height: clamp(30px, 5vw, 55px);
+  }
+  .subscription-c1 span:last-child {
+    font-size: clamp(13px, 4vw, 18px);
+  }
+}
