@@ -121,4 +121,4 @@ Follow these steps to set up Shoekart on your local machine:
 
 ## Authors
 
-Made with ❤️ by **[Sumil Suthar](https://sumilsuthar.me/)**
+Made with ❤️ by **[Rahul Raj](https://www.linkedin.com/in/rahuloraj/)**
