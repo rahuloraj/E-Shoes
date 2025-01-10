@@ -1,6 +1,6 @@
-# Shoekart
+# E-Shoes
 
-Welcome to Shoekart – where style meets comfort! Shoekart is an e-commerce platform dedicated to buying shoes, built on the MERN (MongoDB, Express.js, React.js, Node.js) stack. Shoekart not only provides a user-friendly interface for customers to browse and purchase shoes but also includes an admin section for managing products, orders, and users. Additionally, it features a secure payment section powered by Stripe.
+Welcome to E-Shoes – where style meets comfort! Shoekart is an e-commerce platform dedicated to buying shoes, built on the MERN (MongoDB, Express.js, React.js, Node.js) stack. Shoekart not only provides a user-friendly interface for customers to browse and purchase shoes but also includes an admin section for managing products, orders, and users. Additionally, it features a secure payment section powered by Stripe.
 
 ![Shoekart Landing Page](./client/src/Images/readmeImage.png)
 
